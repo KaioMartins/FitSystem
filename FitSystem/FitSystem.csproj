@@ -196,6 +196,21 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DiaController.cs" />
+    <Compile Include="Controllers\ExercicioController.cs" />
+    <Compile Include="Controllers\ExercicioTreinoController.cs" />
+    <Compile Include="Controllers\TipoExercicioController.cs" />
+    <Compile Include="Migrations\201610101631158_bd.cs" />
+    <Compile Include="Migrations\201610101631158_bd.Designer.cs">
+      <DependentUpon>201610101631158_bd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610101637271_bd1.cs" />
+    <Compile Include="Migrations\201610101637271_bd1.Designer.cs">
+      <DependentUpon>201610101637271_bd1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\BDContext.cs" />
+    <Compile Include="Models\Dia.cs" />
     <Compile Include="Models\Exercicio.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -206,7 +221,9 @@
     <Compile Include="Models\ExercicioTreino.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\TipoExercicio.cs" />
     <Compile Include="Models\Treino.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -270,6 +287,26 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Dia\Create.cshtml" />
+    <Content Include="Views\Dia\Delete.cshtml" />
+    <Content Include="Views\Dia\Details.cshtml" />
+    <Content Include="Views\Dia\Edit.cshtml" />
+    <Content Include="Views\Dia\Index.cshtml" />
+    <Content Include="Views\Exercicio\Create.cshtml" />
+    <Content Include="Views\Exercicio\Delete.cshtml" />
+    <Content Include="Views\Exercicio\Details.cshtml" />
+    <Content Include="Views\Exercicio\Edit.cshtml" />
+    <Content Include="Views\Exercicio\Index.cshtml" />
+    <Content Include="Views\ExercicioTreino\Create.cshtml" />
+    <Content Include="Views\ExercicioTreino\Delete.cshtml" />
+    <Content Include="Views\ExercicioTreino\Details.cshtml" />
+    <Content Include="Views\ExercicioTreino\Edit.cshtml" />
+    <Content Include="Views\ExercicioTreino\Index.cshtml" />
+    <Content Include="Views\TipoExercicio\Create.cshtml" />
+    <Content Include="Views\TipoExercicio\Delete.cshtml" />
+    <Content Include="Views\TipoExercicio\Details.cshtml" />
+    <Content Include="Views\TipoExercicio\Edit.cshtml" />
+    <Content Include="Views\TipoExercicio\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -281,6 +318,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201610101631158_bd.resx">
+      <DependentUpon>201610101631158_bd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610101637271_bd1.resx">
+      <DependentUpon>201610101637271_bd1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,34 @@
+﻿@model FitSystem.Models.Exercicio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Exercicio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoExercicio.TipoExercicioDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoExercicio.TipoExercicioDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExercicioDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExercicioDesc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ExercicioId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
