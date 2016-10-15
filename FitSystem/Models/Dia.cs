@@ -9,5 +9,6 @@ namespace FitSystem.Models
     {
         public int DiaId { get; set; }
         public string DiaDesc { get; set; }
+
     }
 }
