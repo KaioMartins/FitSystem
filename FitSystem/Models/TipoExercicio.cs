@@ -12,9 +12,6 @@ namespace FitSystem.Models
         
         public int TipoExercicioId { get; set; }
         public string TipoExercicioDesc { get; set; }
-
-       
-
         
     }
 }

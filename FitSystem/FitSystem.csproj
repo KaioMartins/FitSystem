@@ -200,13 +200,11 @@
     <Compile Include="Controllers\ExercicioController.cs" />
     <Compile Include="Controllers\ExercicioTreinoController.cs" />
     <Compile Include="Controllers\TipoExercicioController.cs" />
-    <Compile Include="Migrations\201610101631158_bd.cs" />
-    <Compile Include="Migrations\201610101631158_bd.Designer.cs">
-      <DependentUpon>201610101631158_bd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610101637271_bd1.cs" />
-    <Compile Include="Migrations\201610101637271_bd1.Designer.cs">
-      <DependentUpon>201610101637271_bd1.cs</DependentUpon>
+    <Compile Include="Controllers\TreinoController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Migrations\201610131803544_bd.cs" />
+    <Compile Include="Migrations\201610131803544_bd.Designer.cs">
+      <DependentUpon>201610131803544_bd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BDContext.cs" />
@@ -307,6 +305,16 @@
     <Content Include="Views\TipoExercicio\Details.cshtml" />
     <Content Include="Views\TipoExercicio\Edit.cshtml" />
     <Content Include="Views\TipoExercicio\Index.cshtml" />
+    <Content Include="Views\Treino\Create.cshtml" />
+    <Content Include="Views\Treino\Delete.cshtml" />
+    <Content Include="Views\Treino\Details.cshtml" />
+    <Content Include="Views\Treino\Edit.cshtml" />
+    <Content Include="Views\Treino\Index.cshtml" />
+    <Content Include="Views\Usuario\Create.cshtml" />
+    <Content Include="Views\Usuario\Delete.cshtml" />
+    <Content Include="Views\Usuario\Details.cshtml" />
+    <Content Include="Views\Usuario\Edit.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -320,11 +328,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201610101631158_bd.resx">
-      <DependentUpon>201610101631158_bd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610101637271_bd1.resx">
-      <DependentUpon>201610101637271_bd1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610131803544_bd.resx">
+      <DependentUpon>201610131803544_bd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
